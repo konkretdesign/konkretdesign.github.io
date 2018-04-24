@@ -1,0 +1,278 @@
+<html>
+<head>
+  <title>KONKRET | Statisches Webdesign</title>
+  <meta name="description" content="Konkret das ist statische Websitengenerierung mit minimalistischem Design. Konkret eben."/>
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <meta content="INDEX, FOLLOW" name="GOOGLEBOT"/>
+  <meta content="index, follow, all" name="robots"/>
+  <meta content="all" name="googlebot"/>
+  <meta content="all" name="msnbot"/>
+  <meta content="all" name="Googlebot-Image"/>
+  <meta content="all" name="Slurp"/>
+  <meta content="all" name="ZyBorg"/>
+  <meta content="all" name="Scooter"/>
+  <meta http-equiv="Content-Type" content="text/ht	ml;charset=utf-8" />
+  <link rel="shortcut icon" href="{{.Site.BaseURL}}images/favicon.png" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <link id="lang" href="css/deutsch.css" rel="stylesheet">
+  <style>
+    html, body{
+      height: 100%;
+    }
+    ul{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    a{
+      color: #f2f2f2;
+      text-decoration: none;
+    }
+    body{
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      padding: 0;
+      margin: 0;
+      text-align: left;
+      text-transform: lowercase;
+      background: #1c2430;
+      color: #f2f2f2;
+    }
+    button{
+      padding: 0;
+      margin: 0;
+      background: transparent;
+      border: none;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-weight: 400;
+      font-size: 12px;
+      text-align: center;
+      text-transform: uppercase;
+      cursor: pointer;
+      color: #f2f2f2;
+    }
+    #container{
+      width: 100%;
+      height: 100%;
+    }
+    #buttons{
+      position: fixed;
+      top: 10px;
+      left: 14px;
+    }
+    #rahmen{
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 100%;
+      max-width: 1200px;
+      max-height: 400px;
+    }
+    #rahmen{
+
+    }
+    #linke{
+      width: 59%;
+      height: 100%;
+      float: left;
+    }
+    #rechte{
+      width: 40%;
+      height: 100%;
+      float: right;
+    }
+    #logo, #beschreibung, #skills, #referenzen, #kontakt{
+      width: 100%;
+      float: left;
+    }
+    #logo{
+      text-align: right;
+      text-transform: uppercase;
+    }
+    .grossesk{
+      float: left;
+      font-size: 17vw;
+      text-transform: uppercase;
+      line-height: 0.8em;
+    }
+    .obertext{
+      font-size: 10vw;
+      line-height: 0.8em;
+      float: left;
+    }
+    .untertext{
+      font-size: 6.5vw;
+      line-height: 0.8em;
+      float: left;
+      letter-spacing: 0.2em;
+    }
+    #beschreibung{
+      text-align: justify;
+      font-size: 1.6vw;
+      line-height: 1.1em;
+      float: none;
+      width: 94%;
+      margin: 0 auto;
+    }
+    #skills{
+      font-size: 2.2vw;
+      line-height: 1.05em;
+      letter-spacing: 0.2em;
+      text-transform: none;
+    }
+    #referenzen{
+      font-size: 2.2vw;
+      line-height: 1.3em;
+      margin-top: 5%;
+    }
+    #referenzen a{
+      border-bottom: 0.1em #f2f2f2 solid;
+      transition: letter-spacing 0.4s;
+    }
+    #referenzen a:hover{
+      letter-spacing: 4px;
+    }
+    #kontakt{
+      height: 15%;
+      font-size: 2.2vw;
+      float: none;
+      width: 94%;
+      margin: 0 auto;
+    }
+    #kontakt a{
+      border-bottom: 0.14em #f2f2f2 solid;
+      transition: border-width 0.4s;
+    }
+    #kontakt a:hover{
+      border-width: 1.8em;
+    }
+    .inner{
+      padding: 0.6vw;
+    }
+    #links{
+      position: fixed;
+      right: 14px;
+      top: 10px;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+    #links li{
+      display: inline;
+      padding: 0 10px;
+    }
+    #links a, #sprache{
+      border-bottom: 0px solid #f2f2f2;
+      transition: border-width 0.1s;
+    }
+    #links a:hover, #sprache:hover{
+      border-width: 8px;
+    }
+    #disclaimer{
+      position: fixed;
+      bottom: 8px;
+      left: 50%;
+      font-size: 8px;
+      text-transform: uppercase;
+      transform: translateX(-50%);
+      width: 100%;
+      text-align: center;
+    }
+  </style>
+  <script>
+  function changeLang(){
+    var button = document.getElementById("sprache");
+    if (button.className=="switched"){
+      document.getElementById("lang").setAttribute("href", "css/deutsch.css");
+    }
+    else{
+      document.getElementById("lang").setAttribute("href", "css/english.css");
+    }
+    button.classList.toggle("switched");
+  }
+  </script>
+</head>
+<body>
+  <div id="container">
+    <div id="buttons">
+      <div id="sprache">
+        <button onclick="changeLang()">
+          <span class="deu">GER / ENG</span><span class="eng">ENG / DEU</span>
+        </button>
+      </div>
+    </div>
+    <div id="links">
+      <ul>
+        <li><a href="" class="deu">Drüber</a><a href="" class="eng">About</a></li>
+        <li><a href="" class="deu">Wir sinds</a><a href="" class="eng">It`s us</a></li>
+        <li><a href="" class="deu">Impressum</a><a href="" class="eng">Disclaimer</a></li>
+      </ul>
+    </div>
+    <div id="rahmen">
+      <div id="linke">
+        <div id="logo">
+          <div class="logoinner">
+          <div class="grossesk">
+            k
+          </div>
+          <div class="obertext">
+            on
+          </div>
+          <div class="untertext">
+            ret
+          </div>
+        </div>
+        </div>
+        <div id="beschreibung">
+          <div class="inner">
+          <span href="" class="deu">
+            Von Hand gemachte, statische Websiten mit minimal Design. Wir glauben, dass man mit möglichst wenig möglichst viel erreichen sollte. Konkret bleiben halt.
+          </span>
+          <span href="" class="eng">
+            Handmade and static websites with a minimal design. We believe that you should get the most out of the fewest. Konkret is german for exactly that.
+          </span>
+        </div>
+        </div>
+        <div id="kontakt">
+          <div class="inner">
+          <a href="mailto:">konkretweb[at]gmail.de</a>
+        </div>
+        </div>
+      </div>
+      <div id="rechte">
+        <div id="skills">
+          <div class="inner">
+          <ul>
+            <li>&lt;html&gt;</li>
+            <li>#CSS</li>
+            <li>Java script</li>
+            <li>Typografie</li>
+            <li>UI Design</li>
+            <li>SEO</li>
+            <li>DNS</li>
+          </ul>
+        </div>
+        </div>
+        <div id="referenzen">
+          <div class="inner">
+          <ul>
+            <li><a href="">qitan.blog</a></li>
+            <li><a href="">jourdan.de</a></li>
+            <li><a href="">dasource93.net</a></li>
+          </ul>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div id="disclaimer">
+      <span href="" class="deu">
+        Diese Website enthält keine Bilder und kein Javascript. Sie ist vollkommen dynamisch und passt sich automatisch an jede Bildschirmgröße an.
+      </span>
+      <span href="" class="eng">
+        This website contains no images and is using no Java Script. It is completely dynamic and will adjust to any kind of screen or device.
+      </span>
+    </div>
+  </div>
+</body>
+</html>
