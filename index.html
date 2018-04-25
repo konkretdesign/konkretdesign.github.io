@@ -13,7 +13,7 @@
   <meta content="all" name="Scooter"/>
   <meta http-equiv="Content-Type" content="text/ht	ml;charset=utf-8" />
   <link rel="shortcut icon" href="{{.Site.BaseURL}}images/favicon.png" />
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans|Montserrat" rel="stylesheet">
   <link id="lang" href="css/deutsch.css" rel="stylesheet">
   <style>
     html, body{
@@ -25,32 +25,32 @@
       margin: 0;
     }
     a{
-      color: #f2f2f2;
+      color: #0d0d14;
       text-decoration: none;
     }
     body{
-      font-family: 'Montserrat', Arial, sans-serif;
+      font-family: 'PT Sans', Arial, sans-serif;
       font-weight: 400;
       font-size: 18px;
       padding: 0;
       margin: 0;
       text-align: left;
       text-transform: lowercase;
-      background: #1c2430;
-      color: #f2f2f2;
+      background: #f7f7f7;
+      color: #0d0d14;
     }
     button{
       padding: 0;
       margin: 0;
       background: transparent;
       border: none;
-      font-family: 'Montserrat', Arial, sans-serif;
+      font-family: 'PT Sans', Arial, sans-serif;
       font-weight: 400;
       font-size: 12px;
       text-align: center;
       text-transform: uppercase;
       cursor: pointer;
-      color: #f2f2f2;
+      color: #0d0d14;
     }
     #container{
       width: 100%;
@@ -66,12 +66,6 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      height: 100%;
-      max-width: 1200px;
-      max-height: 400px;
-    }
-    #rahmen{
-
     }
     #linke{
       width: 59%;
@@ -90,6 +84,7 @@
     #logo{
       text-align: right;
       text-transform: uppercase;
+      font-family: 'Montserrat', Arial, sans-serif;
     }
     .grossesk{
       float: left;
@@ -117,22 +112,21 @@
       margin: 0 auto;
     }
     #skills{
-      font-size: 2.2vw;
-      line-height: 1.05em;
-      letter-spacing: 0.2em;
+      font-size: 1.6vw;
+      line-height: 1.3em;
       text-transform: none;
     }
     #referenzen{
-      font-size: 2.2vw;
-      line-height: 1.3em;
+      font-size: 1.6vw;
+      line-height: 1.6em;
       margin-top: 5%;
     }
     #referenzen a{
-      border-bottom: 0.1em #f2f2f2 solid;
-      transition: letter-spacing 0.4s;
+      border-bottom: 0.1em #0d0d14 solid;
+      transition: border-width 0.2s;
     }
     #referenzen a:hover{
-      letter-spacing: 4px;
+      border-width: 0.4em;
     }
     #kontakt{
       height: 15%;
@@ -142,7 +136,7 @@
       margin: 0 auto;
     }
     #kontakt a{
-      border-bottom: 0.14em #f2f2f2 solid;
+      border-bottom: 0.14em #0d0d14 solid;
       transition: border-width 0.4s;
     }
     #kontakt a:hover{
@@ -150,6 +144,10 @@
     }
     .inner{
       padding: 0.6vw;
+      padding-top: 0;
+    }
+    #rechte .inner{
+      padding-left: 0;
     }
     #links{
       position: fixed;
@@ -163,7 +161,7 @@
       padding: 0 10px;
     }
     #links a, #sprache{
-      border-bottom: 0px solid #f2f2f2;
+      border-bottom: 0px solid #0d0d14;
       transition: border-width 0.1s;
     }
     #links a:hover, #sprache:hover{
@@ -178,6 +176,103 @@
       transform: translateX(-50%);
       width: 100%;
       text-align: center;
+    }
+    @media screen and (max-width: 600px){
+      #disclaimer{
+        display:none;
+      }
+      #linke{
+        width: 100%;
+      }
+      #rechte{
+        width: 94%;
+        margin: 0 auto;
+        margin-top: 16px;
+      }
+      #rahmen{
+        position: fixed;
+        top: 50px;
+        left: 0%;
+        transform: none;
+        width: 94%;
+        padding: 0 3%;
+      }
+      #logo, #beschreibung, #skills, #referenzen, #kontakt{
+        width: 100%;
+        float: left;
+      }
+      #logo{
+        text-align: right;
+        text-transform: uppercase;
+        font-family: 'Montserrat', Arial, sans-serif;
+      }
+      .grossesk{
+        float: left;
+        font-size: 56vw;
+        text-transform: uppercase;
+        line-height: 0.8em;
+      }
+      .obertext{
+        font-size: 32.5vw;
+        line-height: 0.8em;
+        float: left;
+      }
+      .untertext{
+        font-size: 21vw;
+        line-height: 0.8em;
+        float: left;
+        letter-spacing: 0.2em;
+      }
+      #beschreibung{
+        text-align: justify;
+        font-size: 5.6vw;
+        line-height: 1.1em;
+        float: none;
+        width: 92%;
+        margin: 0 auto;
+      }
+      #skills{
+        font-size: 7vw;
+        line-height: 1.3em;
+        text-transform: none;
+        float: left;
+        width: 38%;
+        text-align: right;
+        padding-right: 2%;
+      }
+      #referenzen{
+        font-size: 7vw;
+        line-height: 1.6em;
+        margin-top: 0;
+        float: right;
+        width: 58%;
+        padding-left: 2%;
+      }
+      #referenzen a{
+        border-bottom: 0.1em #0d0d14 solid;
+        transition: border-width 0.2s;
+      }
+      #referenzen a:hover{
+        border-width: 0.4em;
+      }
+      #kontakt{
+        height: 15%;
+        font-size: 7.2vw;
+        float: none;
+        width: 92%;
+        margin: 0 auto;
+      }
+      #kontakt a{
+        border-bottom: 0.14em #0d0d14 solid;
+        transition: border-width 0.4s;
+      }
+      #kontakt a:hover{
+        border-width: 1.8em;
+      }
+      .inner{
+        padding: 0.6vw;
+        padding-top: 0;
+      }
     }
   </style>
   <script>
@@ -204,9 +299,9 @@
     </div>
     <div id="links">
       <ul>
-        <li><a href="" class="deu">Drüber</a><a href="" class="eng">About</a></li>
-        <li><a href="" class="deu">Wir sinds</a><a href="" class="eng">It`s us</a></li>
-        <li><a href="" class="deu">Impressum</a><a href="" class="eng">Disclaimer</a></li>
+        <li><a href="drüber/index.html" class="deu">Drüber</a><a href="about/index.html" class="eng">About</a></li>
+        <li><a href="wirsinds/index.html" class="deu">Wir sinds</a><a href="itsus/index.html" class="eng">It`s us</a></li>
+        <li><a href="impressum/index.html" class="deu">Impressum</a><a href="" class="eng">Disclaimer</a></li>
       </ul>
     </div>
     <div id="rahmen">
@@ -236,7 +331,7 @@
         </div>
         <div id="kontakt">
           <div class="inner">
-          <a href="mailto:">konkretweb[at]gmail.de</a>
+          <a href="mailto:konkretdesign@outlook.de?subject=Kontakt">konkretdesign[at]outlook.de</a>
         </div>
         </div>
       </div>
@@ -244,10 +339,10 @@
         <div id="skills">
           <div class="inner">
           <ul>
-            <li>&lt;html&gt;</li>
-            <li>#CSS</li>
-            <li>Java script</li>
-            <li>Typografie</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Java Script</li>
+            <li><span class="deu">Typografie</span><span class="eng">Typography</span></li>
             <li>UI Design</li>
             <li>SEO</li>
             <li>DNS</li>
@@ -257,9 +352,10 @@
         <div id="referenzen">
           <div class="inner">
           <ul>
-            <li><a href="">qitan.blog</a></li>
-            <li><a href="">jourdan.de</a></li>
-            <li><a href="">dasource93.net</a></li>
+            <li style="margin-bottom: -0.28em;"><span class="deu">Referenzen</span><span class="eng">References</span></li>
+            <li><a href="https://qitan.blog">qitan.blog</a></li>
+            <li><a href="/">russian.vodka</a></li>
+            <li><a href="/">sotight.net</a></li>
           </ul>
         </div>
         </div>
