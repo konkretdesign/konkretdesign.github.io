@@ -65,7 +65,7 @@
       position: fixed;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-45%, -50%);
     }
     #linke{
       width: 59%;
@@ -190,12 +190,9 @@
         margin-top: 16px;
       }
       #rahmen{
-        position: fixed;
-        top: 50px;
-        left: 0%;
-        transform: none;
         width: 94%;
-        padding: 0 3%;
+        padding: 50px 3% 0 3%;
+        transform: translate(-50%, -50%);
       }
       #logo, #beschreibung, #skills, #referenzen, #kontakt{
         width: 100%;
@@ -232,20 +229,31 @@
         margin: 0 auto;
       }
       #skills{
-        font-size: 7vw;
-        line-height: 1.3em;
+        font-size: 5vw;
+        line-height: 1.6em;
         text-transform: none;
         float: left;
-        width: 38%;
+        width: 53%;
         text-align: right;
         padding-right: 2%;
       }
+      #skills li{
+        display: inline;
+      }
+      #skills li::after{
+        content:"|";
+        padding: 0 2px 0 4px;
+      }
+      #skills li:last-of-type::after{
+        content:"";
+        padding: 0;
+      }
       #referenzen{
-        font-size: 7vw;
+        font-size: 5vw;
         line-height: 1.6em;
         margin-top: 0;
         float: right;
-        width: 58%;
+        width: 43%;
         padding-left: 2%;
       }
       #referenzen a{
@@ -272,6 +280,15 @@
       .inner{
         padding: 0.6vw;
         padding-top: 0;
+      }
+      #links{
+        right: 10px;
+      }
+      #links li{
+        padding: 0 6px;
+      }
+      #kontakt a:hover{
+        border-width: 0.8em;
       }
     }
   </style>
