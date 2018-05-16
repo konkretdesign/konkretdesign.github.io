@@ -12,7 +12,8 @@
   <meta content="all" name="ZyBorg"/>
   <meta content="all" name="Scooter"/>
   <meta http-equiv="Content-Type" content="text/ht	ml;charset=utf-8" />
-  <link rel="shortcut icon" href="{{.Site.BaseURL}}images/favicon.png" />
+  <link rel="shortcut icon" href="/img/favicon.png"/>
+  <link rel="shortcut icon" href="/img/favicon.svg"/>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans|Montserrat" rel="stylesheet">
   <link id="lang" href="css/deutsch.css" rel="stylesheet">
   <style>
@@ -46,7 +47,7 @@
       border: none;
       font-family: 'PT Sans', Arial, sans-serif;
       font-weight: 400;
-      font-size: 12px;
+      font-size: 14px;
       text-align: center;
       text-transform: uppercase;
       cursor: pointer;
@@ -65,15 +66,15 @@
       position: fixed;
       top: 50%;
       left: 50%;
-      transform: translate(-45%, -50%);
+      transform: translate(-42%, -50%);
     }
     #linke{
-      width: 59%;
+      width: 58%;
       height: 100%;
       float: left;
     }
     #rechte{
-      width: 40%;
+      width: 39%;
       height: 100%;
       float: right;
     }
@@ -81,43 +82,25 @@
       width: 100%;
       float: left;
     }
-    #logo{
-      text-align: right;
-      text-transform: uppercase;
-      font-family: 'Montserrat', Arial, sans-serif;
-    }
-    .grossesk{
-      float: left;
-      font-size: 17vw;
-      text-transform: uppercase;
-      line-height: 0.8em;
-    }
-    .obertext{
-      font-size: 10vw;
-      line-height: 0.8em;
-      float: left;
-    }
-    .untertext{
-      font-size: 6.5vw;
-      line-height: 0.8em;
-      float: left;
-      letter-spacing: 0.2em;
+    #logo img{
+      width: 100%;
+      height: auto;
     }
     #beschreibung{
       text-align: justify;
       font-size: 1.6vw;
       line-height: 1.1em;
-      float: none;
-      width: 94%;
-      margin: 0 auto;
+      float: left;
+      margin: 12px 0;
     }
     #skills{
-      font-size: 1.6vw;
+      font-size: 1.94vw;
       line-height: 1.3em;
       text-transform: none;
+      margin-top: -0.3em;
     }
     #referenzen{
-      font-size: 1.6vw;
+      font-size: 1.94vw;
       line-height: 1.6em;
       margin-top: 5%;
     }
@@ -130,10 +113,9 @@
     }
     #kontakt{
       height: 15%;
-      font-size: 2.2vw;
-      float: none;
-      width: 94%;
-      margin: 0 auto;
+      font-size: 2.45vw;
+      line-height: 2.45vw;
+      text-align: center;
     }
     #kontakt a{
       border-bottom: 0.14em #0d0d14 solid;
@@ -153,7 +135,7 @@
       position: fixed;
       right: 14px;
       top: 10px;
-      font-size: 12px;
+      font-size: 14px;
       text-transform: uppercase;
     }
     #links li{
@@ -167,31 +149,15 @@
     #links a:hover, #sprache:hover{
       border-width: 8px;
     }
-    #disclaimer{
-      position: fixed;
-      bottom: 8px;
-      left: 50%;
-      font-size: 8px;
-      text-transform: uppercase;
-      transform: translateX(-50%);
-      width: 100%;
-      text-align: center;
-    }
     @media screen and (max-width: 600px){
-      #disclaimer{
-        display:none;
-      }
       #linke{
         width: 100%;
       }
       #rechte{
-        width: 94%;
-        margin: 0 auto;
-        margin-top: 16px;
+        display:none;
       }
       #rahmen{
-        width: 94%;
-        padding: 50px 3% 0 3%;
+        width: 84%;
         transform: translate(-50%, -50%);
       }
       #logo, #beschreibung, #skills, #referenzen, #kontakt{
@@ -199,76 +165,19 @@
         float: left;
       }
       #logo{
-        text-align: right;
-        text-transform: uppercase;
-        font-family: 'Montserrat', Arial, sans-serif;
-      }
-      .grossesk{
-        float: left;
-        font-size: 56vw;
-        text-transform: uppercase;
-        line-height: 0.8em;
-      }
-      .obertext{
-        font-size: 32.5vw;
-        line-height: 0.8em;
-        float: left;
-      }
-      .untertext{
-        font-size: 21vw;
-        line-height: 0.8em;
-        float: left;
-        letter-spacing: 0.2em;
+        float: none;
       }
       #beschreibung{
         text-align: justify;
         font-size: 5.6vw;
         line-height: 1.1em;
         float: none;
-        width: 92%;
-        margin: 0 auto;
-      }
-      #skills{
-        font-size: 5vw;
-        line-height: 1.6em;
-        text-transform: none;
-        float: left;
-        width: 53%;
-        text-align: right;
-        padding-right: 2%;
-      }
-      #skills li{
-        display: inline;
-      }
-      #skills li::after{
-        content:"|";
-        padding: 0 2px 0 4px;
-      }
-      #skills li:last-of-type::after{
-        content:"";
-        padding: 0;
-      }
-      #referenzen{
-        font-size: 5vw;
-        line-height: 1.6em;
-        margin-top: 0;
-        float: right;
-        width: 43%;
-        padding-left: 2%;
-      }
-      #referenzen a{
-        border-bottom: 0.1em #0d0d14 solid;
-        transition: border-width 0.2s;
-      }
-      #referenzen a:hover{
-        border-width: 0.4em;
+        margin: 18px 0;
       }
       #kontakt{
         height: 15%;
         font-size: 7.2vw;
         float: none;
-        width: 92%;
-        margin: 0 auto;
       }
       #kontakt a{
         border-bottom: 0.14em #0d0d14 solid;
@@ -276,10 +185,6 @@
       }
       #kontakt a:hover{
         border-width: 1.8em;
-      }
-      .inner{
-        padding: 0.6vw;
-        padding-top: 0;
       }
       #links{
         right: 10px;
@@ -324,67 +229,40 @@
     <div id="rahmen">
       <div id="linke">
         <div id="logo">
-          <div class="logoinner">
-          <div class="grossesk">
-            k
-          </div>
-          <div class="obertext">
-            on
-          </div>
-          <div class="untertext">
-            ret
-          </div>
-        </div>
+          <img src="/img/logo.png" alt="logo">
         </div>
         <div id="beschreibung">
-          <div class="inner">
           <span href="" class="deu">
-            Von Hand gemachte, statische Websiten mit minimal Design. Wir glauben, dass man mit möglichst wenig möglichst viel erreichen sollte. Konkret bleiben halt.
+            Von Hand gemachte, statische Websiten mit minimalistischem Design. Wir glauben, dass man mit möglichst wenig möglichst viel erreichen sollte. Konkret bleiben halt.
           </span>
           <span href="" class="eng">
             Handmade and static websites with a minimal design. We believe that you should get the most out of the fewest. Konkret is german for exactly that.
           </span>
         </div>
-        </div>
         <div id="kontakt">
-          <div class="inner">
           <a href="mailto:konkretdesign@outlook.de?subject=Kontakt">konkretdesign[at]outlook.de</a>
-        </div>
         </div>
       </div>
       <div id="rechte">
         <div id="skills">
-          <div class="inner">
           <ul>
             <li>HTML</li>
             <li>CSS</li>
             <li>Java Script</li>
             <li><span class="deu">Typografie</span><span class="eng">Typography</span></li>
             <li>UI Design</li>
-            <li>SEO</li>
             <li>DNS</li>
           </ul>
         </div>
-        </div>
         <div id="referenzen">
-          <div class="inner">
           <ul>
-            <li style="margin-bottom: -0.28em;"><span class="deu">Referenzen</span><span class="eng">References</span></li>
+            <li style="margin-bottom: -0.24em;"><span class="deu">Referenzen:</span><span class="eng">References:</span></li>
             <li><a href="https://qitan.blog">qitan.blog</a></li>
             <li><a href="/">russian.vodka</a></li>
             <li><a href="/">sotight.net</a></li>
           </ul>
         </div>
-        </div>
       </div>
-    </div>
-    <div id="disclaimer">
-      <span href="" class="deu">
-        Diese Website enthält keine Bilder und kein Javascript. Sie ist vollkommen dynamisch und passt sich automatisch an jede Bildschirmgröße an.
-      </span>
-      <span href="" class="eng">
-        This website contains no images and is using no Java Script. It is completely dynamic and will adjust to any kind of screen or device.
-      </span>
     </div>
   </div>
 </body>
