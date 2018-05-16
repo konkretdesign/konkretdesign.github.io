@@ -15,7 +15,10 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.1 r15371"
-   sodipodi:docname="favicon.svg">
+   sodipodi:docname="favicon.svg"
+   inkscape:export-filename="C:\Users\Johannes\Desktop\konkret\img\favicon.png"
+   inkscape:export-xdpi="4.6345077"
+   inkscape:export-ydpi="4.6345077">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -55,7 +58,7 @@
      transform="translate(112.6369,-171.13441)">
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:125.27143097px;line-height:0.69999999;font-family:Montserrat;-inkscape-font-specification:Montserrat;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458335"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:125.27143097px;line-height:0.69999999;font-family:Montserrat;-inkscape-font-specification:Montserrat;letter-spacing:0px;word-spacing:0px;fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.26458335;"
        x="-117.8983"
        y="258.8244"
        id="text4493"
@@ -65,6 +68,6 @@
          id="tspan4491"
          x="-117.8983"
          y="258.8244"
-         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:Montserrat;-inkscape-font-specification:'Montserrat Light';stroke-width:0.26458335">K</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:Montserrat;-inkscape-font-specification:'Montserrat Light';stroke-width:0.26458335;fill:#b3b3b3;">K</tspan></text>
   </g>
 </svg>
